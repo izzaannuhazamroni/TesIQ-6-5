@@ -645,11 +645,11 @@ def bulk_prediction(model, scaler, df_raw: pd.DataFrame):
 def single_prob_chart(proba: np.ndarray):
     """Original vertical Plotly bar chart for single prediction."""
     labels = [
-        "0 = Moderate intellectual disability",
-        "1 = Mild intellectual disability",
-        "2 = Below average intelligence",
-        "3 = Average intelligence",
-        "4 = Above-average intelligence",
+        "Moderate intellectual disability",
+        "Mild intellectual disability",
+        "Below average intelligence",
+        "Average intelligence",
+        "Above-average intelligence",
     ]
     colors = [IQ_COLORS[i] for i in range(5)]
 
@@ -749,11 +749,11 @@ def render_iq_spectrum(pred_class: int):
             </div>
         </div>
         <div class="rq-spectrum-labels">
-            <span>0 = Moderate intellectual disability</span>
-            <span>1 = Mild intellectual disability</span>
-            <span>2 = Below average intelligence</span>
-            <span>3 = Average intelligence</span>
-            <span>4 = Above-average intelligence</span>
+            <span>Moderate intellectual disability</span>
+            <span>Mild intellectual disability</span>
+            <span>Below average intelligence</span>
+            <span>Average intelligence</span>
+            <span>Above-average intelligence</span>
         </div>
         <div class="rq-spectrum-ranges">
             <span>35–54</span><span>55–69</span><span>70–84</span>
